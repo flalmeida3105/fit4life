@@ -1,0 +1,477 @@
+/* Defining CSS variables */
+:root {
+    --primary-color: #dcdfec;
+    --secondary-color: #2a607c;
+    --tertiary-color: #00CED1;
+    --black-color: #000000;   
+    --bg-color: rgba(0, 0, 0, 0.4);
+    --hover-color: rgba(83, 82, 82, 0.422);
+    --border-color: #2a607c;
+}
+
+/* removing default browser-enforced styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------- Start Body style ------------- */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--primary-color);
+}
+/* ------------- Finish Body style ------------- */
+
+
+/* ------------- Start header style ------------- */
+
+/* applying styles to <header> */
+header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/bg-image4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+}
+
+header div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+    padding: 0.5rem;
+    width: 100%;
+}
+
+header h1 {
+    display: flex;
+}
+
+header img {
+    width: 6rem;
+    height: auto;
+    margin-top: 1rem;
+}
+
+header h1 a{
+    padding: 0 1rem 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: var(--primary-color);
+    text-shadow: 3px 3px black;
+    font-size: 2rem;
+    margin-top: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: end;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+header nav ul li {
+    padding: 0 0.7rem;
+    font-weight: lighter;
+    font-size: 1.55rem;
+    margin-top: auto;
+}
+
+header nav ul li a {
+    font-weight: lighter;
+    font-size: 1.55rem;
+    color: var(--primary-color);
+    text-shadow: 3px 3px black;
+}
+
+header div h1 a:hover ,header nav ul li a:hover {
+    color: var(--hover-color);
+}
+/* ------------- Finish header style ------------- */
+
+
+/* ------------- Start Hero style ------------- */
+/* Defining hero settings */
+.hero-ctnr {
+    background-image: url("../images/bg-image4.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+    height: 250px;
+}
+
+.hero-ctnr-text {
+    width: 100%;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.hero-ctnr-text h2 {
+    font-size: 2.50rem;
+    color: var(--primary-color);
+    text-shadow: 4px 4px black;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+/* ------------- Finish Hero style ------------- */
+
+
+/* ------------- Start PortFolio style ------------- */
+/* Adding portfolio styles */
+.pf-ctnr {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    line-height: 1.5;
+}
+
+.pf-ctnr-about, .pf-ctnr-work, .pf-ctnr-contact {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+
+.pf-ctnr-boxes {
+    padding: 1em;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pf-ctnr-side {
+    border-right-style: solid;
+    border-color: var(--border-color);
+    border-width: 6px;
+    padding: 1em;
+    width: 200px;
+    height: auto;
+    text-align: right;
+}
+
+.pf-ctnr-text, .pf-ctnr-contact-info {
+    padding: 1em;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pf-ctnr-text-title {
+    width: 70%;
+}
+
+.pf-ctnr-text p, .pf-ctnr-text-title h4 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 20px;
+}
+
+.pf-ctnr-img img {
+    border: var(--secondary-color) 5px solid;
+    max-width: 400px;
+    max-height: 400px;
+    padding: 1em;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.pf-ctnr-main-box {
+    border: var(--border-color) 4px solid;
+    width: 98%;
+    height: 300px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.pf-ctnr-box {
+    border: var(--border-color) 4px solid; 
+    margin: 20px;
+    width: 45%;
+    height: 180px;
+    display: flex;
+    align-items: flex-end;
+    background-position:center;
+    background-size:cover;
+}
+
+.pf-ctnr-boxes-borders {
+    padding: 0.2em;
+    width: 200px;
+    border-radius: 10px 10px 10px 0;
+    border: var(--border-color) 3px solid;
+    background-color: var(--bg-color);
+    position: relative;
+}
+
+.pf-ctnr-boxes-borders h3, .pf-ctnr-boxes-borders p {
+    color: var(--primary-color);
+} 
+
+#pf-ctnr-box0 {
+    background-image: url("../images/FET-page.png");
+    
+}
+
+#pf-ctnr-box0 a {
+    width: 73%;
+    height: 300px;
+    position: absolute;
+}
+
+#pf-ctnr-box1 {
+    background-image: url("../images/eye-spy.png");
+
+}
+
+#pf-ctnr-box2 {
+    background-image: url("../images/fisioemcasa.jpeg");
+}
+
+#pf-ctnr-box3 {
+    background-image: url("../images/oficina-tortas.jpeg");
+}
+
+#pf-ctnr-box4 {
+    background-image: url("../images/trekking-app.png");
+}
+
+#pf-ctnr-box1 a, #pf-ctnr-box2 a, #pf-ctnr-box3 a, #pf-ctnr-box4 a {
+    width: 34%;
+    height: 180px;
+    position: absolute;
+}
+
+.pf-ctnr-contact-info {
+    justify-content: space-around;
+}
+/* ------------- Finish Portfolio style ------------- */
+
+/* ------------- Start Footer style ------------- */
+footer h3, footer div {
+    font-size: 1rem;
+    text-align: center;
+    opacity: 0.4;
+}
+/* ------------- Finish Footer style ------------- */
+
+
+/* ------------- Start Media Query style ------------- */
+
+/* Adjust the site to resolutions grater than 768px and less than 980px */
+@media screen and (max-width:980px) {
+    header {
+        padding: 0;
+        justify-content: center;
+        position: relative;
+    }
+    header div, header h1 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    header div h1 a {
+        margin-bottom: 0;
+    }
+
+    header div nav ul, header div nav ul li {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0.3rem;
+    }
+
+    .hero-ctnr {
+        display: flex;
+        justify-content: center;
+    }
+    .pf-ctnr-side {
+        border-right-style: none;
+        border-bottom-style: solid;
+        border-color: grey;
+        border-width: 6px;
+        padding: 0em;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+ 
+    .pf-ctnr-text, .pf-ctnr-boxes, .pf-ctnr-contact-info {
+        padding: 0.2em;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-ctnr-text h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+   #pf-ctnr-box0 a, #pf-ctnr-box1, #pf-ctnr-box2, #pf-ctnr-box3, #pf-ctnr-box4 {
+        width: 98%;
+    }
+
+    #pf-ctnr-box0 a, #pf-ctnr-box1 a, #pf-ctnr-box2 a, #pf-ctnr-box3 a, #pf-ctnr-box4 a {
+        width: 91%;
+    }
+
+    .pf-ctnr-text-title {
+        width: 100%;
+    }
+
+    .pf-ctnr-text p {
+        text-align: justify;
+    }
+    
+    #pf-ctnr-about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #large img {
+        border-radius: 50%;
+        max-width: 250px;
+        max-height: 250px;
+        object-fit:fill;
+    }
+}
+
+/* Hides profile image when width is higher than 768px */
+@media screen and (min-width:768px) {
+    #small {
+        display: none;
+    }
+}
+
+/* Adjust the site to resolutions lower than 768px */
+@media screen and (max-width:768px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+ 
+    header div, header h1 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    header div h1 a {
+        margin-bottom: 0;
+    }
+
+    header div nav ul, header div nav ul li {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0.3rem;
+    }
+
+    .hero-ctnr {
+        display: flex;
+        justify-content: center;
+    }
+    .pf-ctnr-side {
+        border-right-style: none;
+        border-bottom-style: solid;
+        border-color: grey;
+        border-width: 6px;
+        padding: 0em;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .pf-ctnr-text, .pf-ctnr-boxes, .pf-ctnr-contact-info {
+        padding: 0.2em;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+       .hero-ctnr-text h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+   #pf-ctnr-box0 a, #pf-ctnr-box1, #pf-ctnr-box2, #pf-ctnr-box3, #pf-ctnr-box4 {
+        width: 100%;
+    }
+
+    #pf-ctnr-box0 a, #pf-ctnr-box1 a, #pf-ctnr-box2 a, #pf-ctnr-box3 a, #pf-ctnr-box4 a {
+        width: 77%;
+    }
+
+    .pf-ctnr-text-title {
+        width: 100%;
+    }
+
+    .pf-ctnr-text p {
+        text-align: justify;
+    }
+    
+    #pf-ctnr-about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #small img {
+        border-radius: 50%;
+        max-width: 160px;
+        max-height: 160px;
+        object-fit:fill;
+    }
+
+    #large  {
+        display: none;
+    }
+
+    .pf-ctnr-main-box, .pf-ctnr-box {
+        margin: 10px 0;
+        width: 100%;
+    }
+}
+
+/* ------------- Finish Media Query style ------------- */
