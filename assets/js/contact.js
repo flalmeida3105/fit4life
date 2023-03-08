@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
         submitHandler: function(form) {
             // send contact form data using EmailJS
             const serviceId = "service_nb2pooc";
-            const templateId = "template_whkgyhi";
+            const templateId = "template_whkgyhi"; 
             emailjs.send(serviceId, templateId, {
                 name: nameInput.value,
                 email: emailInput.value,
