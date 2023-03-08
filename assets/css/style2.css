@@ -5865,4 +5865,21 @@ del {
   margin-bottom: 10px;
 }
 
+.error-message {
+  /* display: none; */
+  color: red;
+  margin-top: 5px;
+  margin-left: 18px;
+  font-size: 1.5em;
+}
+
+.sucessModal {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  outline: 0;
+}
 /*# sourceMappingURL=style.css.map */
