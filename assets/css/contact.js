@@ -18,7 +18,7 @@ $(document).ready(function(){
                 },
                 subject: {
                     required: true,
-                    minlength: 4
+                    minlength: 5
                 },
                 number: {
                     required: true,
@@ -35,30 +35,30 @@ $(document).ready(function(){
             },
             messages: {
                 name: {
-                    required: "come on, you have a name, don't you?",
-                    minlength: "your name must consist of at least 2 characters"
+                    required: "Name is required!",
+                    minlength: "A name should contain at least 2 characters"
                 },
                 subject: {
-                    required: "come on, you have a subject, don't you?",
-                    minlength: "your subject must consist of at least 4 characters"
+                    required: "Subject is required!",
+                    minlength: "A subject must contain at least 5 characters"
                 },
                 number: {
-                    required: "come on, you have a number, don't you?",
-                    minlength: "your Number must consist of at least 5 characters"
+                    required: "Number is required!",
+                    minlength: "A number must contain at least 5 characters"
                 },
                 email: {
-                    required: "no email, no message"
+                    required: "Email is required!"
                 },
                 message: {
-                    required: "um...yea, you have to write something to send this form.",
-                    minlength: "thats all? really?"
+                    required: "Message is required!",
+                    // minlength: "thats all? really?"
                 }
             },
             submitHandler: function(form) {
                 $(form).ajaxSubmit({
                     type:"POST",
                     data: $(form).serialize(),
-                    url:"contact_process.php",
+                    // url:"contact_process.php",
                     success: function() {
                         $('#contactForm :input').attr('disabled', 'disabled');
                         $('#contactForm').fadeTo( "slow", 1, function() {

@@ -1335,7 +1335,11 @@ li {
 /*-- Section Padding -- */
 /* line 683, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_common.scss */
 
-@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+@media only screen and (min-width: 1200px) {
+  .container .contact-section {
+
+    margin: auto;
+  }  
   /* line 683, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_common.scss */
 }
 
