@@ -494,7 +494,7 @@ li {
   width: 100%;
   -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
   box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
-  z-index: 9999;
+  z-index: 100;
   -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
   animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
   -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
@@ -994,15 +994,15 @@ li {
   padding-bottom: 80px;
 }
 
-@media (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
   .pt-50 {
   padding: 0;
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .pb-80 {
     padding: 0;
-  }
+  } */
 /* line 482, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_common.scss */
 
 /* line 482, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_common.scss */
@@ -2002,6 +2002,7 @@ li {
   /* change background color to rgba with alpha value of 0.9 */
   padding: 20px;
   display: none;
+  z-index: 9999;
 }
 
 .mobile-menu-dropdown.show {
