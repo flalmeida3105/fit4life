@@ -4601,19 +4601,71 @@ li {
   padding: 130px 0 100px;
 }
 
-@media (max-width: 991px) {
-  /* line 133, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
+/* @media only screen and (max-width: 767px) {
   .contact-section {
+    width: 80%;
+    height: auto;
+  } */
+
+@media (max-width: 991px) {
+  .contact-section  {
     padding: 70px 0 40px;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  /* line 133, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
   .contact-section {
     padding: 80px 0 50px;
   }
 }
+
+
+ /* Add this CSS to your stylesheet */
+@media only screen and (max-width: 767px) {
+  .contact-title  {
+    text-align: center;
+  }
+
+  .contact-info .media-body {
+    align-items: center;
+  }
+
+  .media-body {
+    text-align: center;
+  }
+
+  .form-contact .form-group {
+    margin-bottom: 2px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.5;
+    resize: none;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    border: none;
+    background: #FF0000;
+    color: #fff !important;
+    border: 1px solid #FF0000;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+  }
+}
+
 
 /* line 141, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
 

@@ -6,7 +6,7 @@
 >
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <style>
+    <!-- <style>
       .gm-control-active > img {
         box-sizing: content-box;
         display: none;
@@ -35,7 +35,7 @@
       .gm-control-active:disabled > img:nth-child(4) {
         display: block;
       }
-    </style>
+    </style> -->
 
     <script
       type="text/javascript"
@@ -55,7 +55,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="./assets/css/slicknav.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/slicknav.css" /> -->
     <link rel="stylesheet" href="./assets/css/flaticon.css" />
     <link rel="stylesheet" href="./assets/css/gijgo.css" />
     <link rel="stylesheet" href="./assets/css/animate.min.css" />
@@ -135,6 +135,13 @@
                 /></a>
               </div>
 
+              <div class="mobile-menu-toggle d-lg-none">
+                <div class="menu-toggle">
+                  <span>Menu</span>
+                </div>
+                <!-- <span class="menu-toggle"></span> -->
+              </div>
+
               <div class="main-menu f-right d-none d-lg-block">
                 <nav>
                   <ul id="navigation">
@@ -148,50 +155,18 @@
               <div class="header-btns d-none d-lg-block f-right">
                 <a href="./contact.html" class="btn">Get in touch</a>
               </div>
-
-              <div class="col-12">
-                <div class="mobile_menu d-block d-lg-none">
-                  <div class="slicknav_menu">
-                    <a
-                      href="./index.html#"
-                      aria-haspopup="true"
-                      role="button"
-                      tabindex="0"
-                      class="slicknav_btn slicknav_collapsed"
-                      style="outline: none"
-                      ><span class="slicknav_menutxt">MENU</span
-                      ><span class="slicknav_icon"
-                        ><span class="slicknav_icon-bar"></span
-                        ><span class="slicknav_icon-bar"></span
-                        ><span class="slicknav_icon-bar"></span></span
-                    ></a>
-                    <ul
-                      class="slicknav_nav slicknav_hidden"
-                      aria-hidden="true"
-                      role="menu"
-                      style="display: none"
-                    >
-                      <li>
-                        <a href="./index.html" role="menuitem" tabindex="-1"
-                          >Home</a
-                        >
-                      </li>
-                      <li>
-                        <a href="./about.html" role="menuitem" tabindex="-1"
-                          >About</a
-                        >
-                      </li>
-                      <li>
-                        <a href="./contact.html" role="menuitem" tabindex="-1"
-                          >Contact</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
+        </div>
+
+        <div class="mobile-menu-dropdown d-lg-none">
+          <nav>
+            <ul id="mobile-navigation">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
@@ -212,7 +187,7 @@
 
       <section class="contact-section">
         <div class="container">
-          <div class="d-none d-sm-block mb-5 pb-4">
+          <div class="mb-5 pb-4">
             <div class="row">
               <div class="col-12">
                 <h2 class="contact-title">Get in Touch</h2>
