@@ -1728,6 +1728,7 @@ li {
   padding: 0 85px;
 }
 
+
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   /* line 5, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_headerMenu.scss */
   .header-area .main-header {
@@ -1936,6 +1937,10 @@ li {
   z-index: 99;
 } */
 
+body.mobile-menu-open {
+  overflow: hidden;
+}
+
 .mobile-menu-toggle {
   display: block;
   cursor: pointer;
@@ -1995,15 +2000,15 @@ li {
 }
 
 .mobile-menu-dropdown {
-  position: absolute;
+  position: fixed;
   top: 60px;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.5);
-  /* change background color to rgba with alpha value of 0.9 */
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   display: none;
   z-index: 9999;
 }
+
 
 .mobile-menu-dropdown.show {
   display: block;
@@ -2030,10 +2035,9 @@ li {
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
-
-
-
 }
+
+
 
 /* line 163, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_headerMenu.scss */
 

@@ -41,13 +41,57 @@
     //   });
     // };
 
-  $(document).ready(function() {
-    $('.menu-toggle').click(function() {
-      $('.mobile-menu-dropdown').slideToggle();
-    });
-  });
+  // $(document).ready(function() {
+  //   $('.menu-toggle').click(function() {
+  //     $('.mobile-menu-dropdown').slideToggle();
+  //   });
+  // });
 
 
+// const menuToggle = document.querySelector('.mobile-menu-toggle');
+// const mobileMenuDropdown = document.querySelector('.mobile-menu-dropdown');
+// const body = document.querySelector('body');
+
+// menuToggle.addEventListener('click', function() {
+//   this.classList.toggle('active');
+//   mobileMenuDropdown.classList.toggle('show');
+//   body.classList.toggle('mobile-menu-open');
+// });
+
+
+const hamburgerMenuToggle = document.querySelector('.mobile-menu-toggle');
+const mobileMenuDropdown = document.querySelector('.mobile-menu-dropdown');
+
+// add event listener to hamburger menu toggle
+hamburgerMenuToggle.addEventListener('click', function() {
+  // toggle active class on hamburger menu toggle
+  this.classList.toggle('active');
+
+  // toggle show class on mobile menu dropdown
+  mobileMenuDropdown.classList.toggle('show');
+});
+
+// add event listener to document for clicks outside of hamburger menu toggle and mobile menu dropdown
+document.addEventListener('click', function(event) {
+  if (!hamburgerMenuToggle.contains(event.target) && !mobileMenuDropdown.contains(event.target)) {
+    // remove active class from hamburger menu toggle
+    hamburgerMenuToggle.classList.remove('active');
+
+    // hide mobile menu dropdown
+    mobileMenuDropdown.classList.remove('show');
+  }
+});
+
+// add event listener to window for scroll events
+window.addEventListener('scroll', function() {
+  if (mobileMenuDropdown.classList.contains('show')) {
+    // remove active class from hamburger menu toggle
+    hamburgerMenuToggle.classList.remove('active');
+
+    // hide mobile menu dropdown
+    mobileMenuDropdown.classList.remove('show');
+  }
+});
 
 
 
